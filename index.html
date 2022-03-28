@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+        h1{
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            padding: 10px;
+            color: #FF8700;
+        }
+        .main {
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+            background-color: #FFB563;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        input{
+            width: 250px;
+            display: block;
+            outline: 0;
+            border: 0;
+            padding: 10px;
+            font-size: 25px;
+            margin: 0 auto;
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+        input:focus{
+            border: 1px solid green;
+        }
+
+        select{
+            padding: 10px;
+            border-radius: 10px;
+            outline: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="main">
+            <select id="select">
+                <option value="0" title="Choose Currency"><span>Choose Currency</span></option>
+                <option value="18.32"><span>USD To EGP</span></option>
+                <option value="20.11"><span>EUR To EGP</span></option>
+                <option value="4.99"><span>UAE Dirham To EGP</span></option>
+                <option value="4.89"><span>Saudi Riyal To EGP</span></option>
+                <option value="48.64"><span>Bahraini Dinar To EGP</span></option>
+                <option value="1.24"><span>Turkish lira To EGP</span></option>
+            </select>
+            <input id="num1" type="number" placeholder="Choose Currency">
+            <input id="num2" type="number" placeholder="EGP">
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
